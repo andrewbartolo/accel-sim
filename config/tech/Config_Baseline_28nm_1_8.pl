@@ -12,8 +12,8 @@ $reg_e_per_bit=0.4;#pJ/bit
 #Power/Performance Parameters
 @CACHE_E=(0.009,0.009,0.0814);#Cache energy access nJ
 @CACHE_LKG=(0.068,0.068,0.174); #mW
-@MEM_E_per_bit=(15,15); # Additional Energy per bit in memories in pJ/bit for DRAM based memories (Rd, Wr energy for MD1 model) 
-# TODO $MEM_LKG=TOTAL_MEM_LKG/4; #in mWatts for the whole memory
+@MEM_E_per_bit=(5.8,6.2); # Additional Energy per bit in memories in pJ/bit for DRAM based memories (Rd, Wr energy for MD1 model) 
+$MEM_LKG=8.3; #in mWatts for the whole memory
 $LINE_SIZE=256; #line size in Bits
 $Do_power_map=0;
 #$Initial_X_offset=700;
