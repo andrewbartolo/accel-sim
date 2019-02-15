@@ -62,7 +62,7 @@ class collectedCSVLine:
 def gen_sweeps(processPerl=False,collectResults=False):
     for net in networks:
         for batchSize in batchSizes:
-            netBatchCSVPath = './results-energy/%s_%s' % (net, batchSize)
+            netBatchCSVPath = './results-energy/%s_%s.csv' % (net, batchSize)
             netBatchCSV = open(netBatchCSVPath, 'w+')   # always creates file (may be empty)
             netBatchCSV.write(','.join(netBatchCSVColumnNames) + '\n') # write the CSV header
 
